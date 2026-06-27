@@ -1,0 +1,33 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:overworld_sky",
+      "uuid": "67572f32-d67b-4f1a-b52e-6488d20251c7",
+      "secure": false
+    },
+    "components": {
+      "minecraft:sky_box": {
+        "sky_boxes": [
+          {
+            "texture": "textures/environment/overworld_cubemap/cubemap",
+            "condition": "query.time_of_day < 0.23 || query.time_of_day > 0.77" 
+          },
+          {
+            "texture": "textures/environment/sunset_cubemap/cubemap",
+            "condition": "query.time_of_day >= 0.23 && query.time_of_day < 0.27" 
+          },
+          {
+            "texture": "textures/environment/night_cubemap/cubemap",
+            "condition": "query.time_of_day >= 0.27 && query.time_of_day <= 0.73" 
+          },
+          {
+            "texture": "textures/environment/sunset_cubemap/cubemap",
+            "condition": "query.time_of_day > 0.73 && query.time_of_day <= 0.77" 
+          }
+        ],
+        "blend_time": 0.02
+      }
+    }
+  }
+}

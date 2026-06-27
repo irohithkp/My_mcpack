@@ -1,0 +1,30 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "A lightweight custom sky pack",
+        "name": "My Custom Sky",
+        "uuid": "e25db270-3625-416b-9cb6-cce97645cf93",
+        "version": [
+            1,
+            0,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            14,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "description": "A lightweight custom sky pack",
+            "type": "resources",
+            "uuid": "f914aec0-6ada-443e-bcae-ac8ea18ffe29",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ]
+}
